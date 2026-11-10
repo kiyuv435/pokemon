@@ -1,7 +1,7 @@
 import { pokemonRepository } from "../repositories/pokemon.repository.js";
 
 class PokemonService {
-    async getall() {
+    async getAll() {
         const pokemon = await pokemonRepository.getAll
         return pokemon
     }

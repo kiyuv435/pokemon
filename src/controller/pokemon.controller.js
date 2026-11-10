@@ -4,7 +4,7 @@ import { pokemonService } from "../services/pokemon.Services.js";
 class PokemonController {
     async getAll(req, res) {
         try {
-            const pokemon = await pokemonService.getall();
+            const pokemon = await pokemonService.getAll();
             res.json(pokemon);
         } catch (error) {
             console.error(error);
